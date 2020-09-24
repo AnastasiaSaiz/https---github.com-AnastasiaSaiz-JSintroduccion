@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let distancia=parseInt(window.prompt("Escribe la distancia en metros"));
+        let horas=parseInt(window.prompt("Escribe la hora"));
+        let minutos=parseInt(window.prompt("Escribe la min"));
+        let segundos=parseInt(window.prompt("Escribe la seg"));
+        let tiemposegundo= (horas*3600) + (minutos*60) + segundos
+        let km = distancia/1000
+
+        console.log("Metros/Segundo=" + distancia + "/"+  tiemposegundo);
+        let mensaje ="Metros/Segundo=" + distancia + "/"+  tiemposegundo ;
+        window.alert(mensaje)
+
+        console.log("Km/H="+ km+"/"+horas);
+        let mensaje2 ="Km/H="+ km+"/"+horas ;
+        window.alert(mensaje2)
+
+    </script>
+</body>
+</html>
